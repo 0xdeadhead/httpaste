@@ -1,0 +1,2 @@
+include httpaste/static/*
+include httpaste/templates/*

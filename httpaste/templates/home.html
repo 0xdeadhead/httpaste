@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>httpaste</title>
+</head>
+
+<body>
+    <h1>httpaste</h1>
+    <form method="POST" action="/">
+        <textarea id="my-textarea" name="code" rows="20"></textarea>
+        <div class="alert alert-info">
+            <strong>Warning! </strong>Disable auto Indentation(in text editor) before clicking paste
+        </div>
+        <input type="submit" name="submit" value="paste">
+    </form>
+</body>
+<script>
+    function enableTab(id) {
+        var el = document.getElementById(id);
+        el.onkeydown = function(e) {
+            if (e.keyCode === 9) {
+                var val = this.value,
+                    start = this.selectionStart,
+                    end = this.selectionEnd;
+                this.value = val.substring(0, start) + '\t' + val.substring(end);
+                this.selectionStart = this.selectionEnd = start + 1;
+                return false;
+
+            }
+        };
+    }
+    enableTab('my-textarea');
+</script>
+
+</html>

@@ -1,0 +1,48 @@
+input[type=submit] {
+    width: 20%;
+    background-color: #02ffc8ec;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(43, 41, 41);
+}
+
+textarea {
+    width: 90%;
+    background-color: #f8f6f6;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+h1 {
+    text-align: left;
+    color: #03f3f3d8;
+    font-size: 30px;
+}
+
+input[type=submit]:hover {
+    background-color: #03f3f3d8;
+}
+
+.alert {
+    padding: 15px;
+    width: 90%;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px
+}
+
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1
+}
