@@ -1,5 +1,5 @@
 # httpaste
-httpaste is useful for pasting text where manual paste is disabled(Mostly in Coding tests)
+httpaste(only for linux based systems) is useful for pasting text where manual paste is disabled(Mostly in Coding tests)
 
 # Installation
 ```
